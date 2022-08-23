@@ -1,5 +1,5 @@
 export async function signUpUser(userInfo) {
-    const resp = await fetch(`https://localhost:7890/api/v1/users`, {
+    const resp = await fetch(`http://localhost:7890/api/v1/users`, {
         method: 'POST',
         headers: {
             Accept: 'application/json',
