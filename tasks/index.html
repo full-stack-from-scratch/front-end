@@ -22,11 +22,16 @@
             <h1>Web App</h1>
             <button id="logout" class="button is-primary">Logout</button>
         </header>
-
         <main>
-            <h1>Tasks</h1>
+            <h1 class="is-size-3">Sign Up</h1>
+            <form id="sign-up">
+                <label for="username">user name</label>
+                <input type="text" name="username" class="input" placeholder="user name" />
+                <label for="password">Password</label>
+                <input type="password" name="password" class="input" placeholder="password" />
+                <button class="button is-primary">Submit</button>
+            </form>
         </main>
-
         <footer>&copy;2022 Software Developer</footer>
 
         <script type="module" src="tasks.js"></script>
