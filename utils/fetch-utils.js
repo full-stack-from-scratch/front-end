@@ -1,5 +1,5 @@
 export async function signUpUser(userInfo) {
-    const resp = await fetch(`http://localhost:7890/api/v1/users`, {
+    const resp = await fetch(`${process.env.BASE_URL}/api/v1/users`, {
         method: 'POST',
         headers: {
             Accept: 'application/json',
@@ -17,7 +17,7 @@ export async function signUpUser(userInfo) {
 }
 
 export async function signInUser(userInfo) {
-    const resp = await fetch(`http://localhost:7890/api/v1/users/sessions`, {
+    const resp = await fetch(`${process.env.BASE_URL}/api/v1/users/sessions`, {
         method: 'POST',
         headers: {
             Accept: 'application/json',
