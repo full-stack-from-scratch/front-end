@@ -1,4 +1,4 @@
-const BASE_URL = 'https://full-stack-to-do-list.herokuapp.com';
+const BASE_URL = 'https://fs-backend-111.herokuapp.com';
 
 export async function signUpUser(userInfo) {
     const resp = await fetch(`${BASE_URL}/api/v1/users`, {
